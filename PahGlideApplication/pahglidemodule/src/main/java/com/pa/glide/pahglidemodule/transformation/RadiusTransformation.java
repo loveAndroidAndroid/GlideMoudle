@@ -58,6 +58,10 @@ public class RadiusTransformation extends BitmapTransformation {
         return Util.hashCode(TAG.hashCode(), Util.hashCode(radius));
     }
 
+    /***
+     * 通过内部算法 自定义图片缓存key
+     * @param messageDigest
+     */
     @Override
     public void updateDiskCacheKey(@NonNull MessageDigest messageDigest) {
         messageDigest.update((TAG + radius).getBytes(CHARSET));

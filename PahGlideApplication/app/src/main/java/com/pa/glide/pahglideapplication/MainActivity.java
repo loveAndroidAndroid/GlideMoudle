@@ -62,11 +62,11 @@ public class MainActivity extends BaseActivity {
                 Manifest.permission.RECORD_AUDIO};
 
         //实验
-        if (SharedPreUtils.getInt(this,TEST,0) == 0){
-            PermissionUtils.getInstance().gotoPermissionSetting(this);
-        }else {
-            PermissionUtils.getInstance().getSinglePermission(this,Manifest.permission.CALL_PHONE);
-        }
+//        if (SharedPreUtils.getInt(this,TEST,0) == 0){
+//            PermissionUtils.getInstance().gotoPermissionSetting(this);
+//        }else {
+//            PermissionUtils.getInstance().getSinglePermission(this,Manifest.permission.CALL_PHONE);
+//        }
 
 //        PermissionUtils.getInstance().getMultiplePermission(this,strings);
 //        PermissionUtils.getInstance().getMultiplePermissionForSingleResult(this,strings2);
